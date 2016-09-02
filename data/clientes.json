@@ -1,0 +1,127 @@
+{
+  "items": {
+    "item": [
+        {
+        "nome": "Sandro Costa",
+        "cpf": "123.123.123-12",
+        "idade":"32",
+        "cep":"03033-000",
+        "endereco":"Rua Canindé",
+        "numero":"234",
+        "complemento":"",
+        "bairro":"Canindé",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Anderson Silva",
+        "cpf": "321.422.423-22",
+        "idade":"36",
+        "cep":"04754-000",
+        "endereco":"Av. Adolfo Pinheiro",
+        "numero":"104",
+        "complemento":"apto 513",
+        "bairro":"Santo Amaro",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Fernanda Lima",
+        "cpf": "132.132.132-13",
+        "idade":"34",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 12 bloco B",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Renata Barbosa",
+        "cpf": "012.012.012-01",
+        "idade":"23",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 22 bloco B",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Amélia da Silva",
+        "cpf": "345.345.345-34",
+        "idade":"28",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 32 bloco A",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Luciano Almeida",
+        "cpf": "022.022.022-02",
+        "idade":"43",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 51 bloco A",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Fabiana Santos",
+        "cpf": "033.033.033-03",
+        "idade":"18",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 11 bloco C",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Alessandra Correia",
+        "cpf": "032.032.032-03",
+        "idade":"31",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 14 bloco C",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Marcelo Lins",
+        "cpf": "232.232.232-23",
+        "idade":"39",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 24 bloco B",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      },
+      {
+        "nome": "Camila Marques",
+        "cpf": "242.242.242-24",
+        "idade":"69",
+        "cep":"08250-000",
+        "endereco":"Rua Virgínia Ferni",
+        "numero":"1022",
+        "complemento":"apto 13 bloco A",
+        "bairro":"Itaquera",
+        "cidade":"São Paulo",
+        "estado":"SP"
+      }
+      ]
+  }
+
+}

@@ -1,6 +1,10 @@
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap-table/bootstrap-table.min.css">
 <link type="text/css"  rel="stylesheet" href="css/index.css">
+<link href="assets/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+<script type="application/javascript" src="assets/jquery/jquery.min.js"></script>
+<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script>
+
 <div class="page-container">
     <div class="page-head">
         <div class="col-md-12">
@@ -37,7 +41,11 @@
                                     <label  class="bold">Nome:</label>
                                 </td>
                                 <td>
-                                    <span><?php echo $dados->nome; ?></span>
+                                    <span><?php echo $dados->nome;
+                                        echo '<input id="rating-system" type="number" class="rating" min="1" max="5" step="'.$dados->importancia.'">';
+                                        echo "<script>$('#rating-system').rating('update', ".$dados->importancia.");</script>";
+                                    ?>
+                                    </span>
                                 </td>
                                 <td>
                                     <label  class="bold">Idade:</label>
@@ -48,10 +56,11 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label  class="bold">CPF:</label>
+                                    <?php $tipoCliente = ($dados->tipo == 1) ? 'Pessoa Jurídica' : 'Pessoa Física'; ?>
+                                    <label  class="bold"><?php echo $tipoCliente; ?> :</label>
                                 </td>
                                 <td>
-                                    <span><?php echo $dados->cpf; ?></span>
+                                    <span><?php echo $dados->documento; ?></span>
                                 </td>
                                 <td>
                                     <label  class="bold">CEP:</label>

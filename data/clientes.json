@@ -2,8 +2,8 @@
   "items": {
     "item": [
         {
-        "nome": "Sandro Costa",
-        "cpf": "123.123.123-12",
+        "nome": "Sandro Costa ME",
+        "cnpj": "12.312.312/0001-12",
         "idade":"32",
         "cep":"03033-000",
         "endereco":"Rua Canindé",
@@ -11,19 +11,21 @@
         "complemento":"",
         "bairro":"Canindé",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 5
       },
       {
-        "nome": "Anderson Silva",
-        "cpf": "321.422.423-22",
-        "idade":"36",
+        "nome": "Super Car LTDA",
+        "cnpj": "32.142.242/0001-22",
+        "idade":"16",
         "cep":"04754-000",
         "endereco":"Av. Adolfo Pinheiro",
         "numero":"104",
         "complemento":"apto 513",
         "bairro":"Santo Amaro",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 4
       },
       {
         "nome": "Fernanda Lima",
@@ -35,7 +37,8 @@
         "complemento":"apto 12 bloco B",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 3
       },
       {
         "nome": "Renata Barbosa",
@@ -47,7 +50,8 @@
         "complemento":"apto 22 bloco B",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 2
       },
       {
         "nome": "Amélia da Silva",
@@ -59,7 +63,8 @@
         "complemento":"apto 32 bloco A",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 3
       },
       {
         "nome": "Luciano Almeida",
@@ -71,7 +76,8 @@
         "complemento":"apto 51 bloco A",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 4
       },
       {
         "nome": "Fabiana Santos",
@@ -83,7 +89,8 @@
         "complemento":"apto 11 bloco C",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 5
       },
       {
         "nome": "Alessandra Correia",
@@ -95,7 +102,8 @@
         "complemento":"apto 14 bloco C",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 4
       },
       {
         "nome": "Marcelo Lins",
@@ -107,7 +115,8 @@
         "complemento":"apto 24 bloco B",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 2
       },
       {
         "nome": "Camila Marques",
@@ -119,7 +128,8 @@
         "complemento":"apto 13 bloco A",
         "bairro":"Itaquera",
         "cidade":"São Paulo",
-        "estado":"SP"
+        "estado":"SP",
+        "importancia": 1
       }
       ]
   }

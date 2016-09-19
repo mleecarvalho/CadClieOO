@@ -1,7 +1,9 @@
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap-table/bootstrap-table.min.css">
 <link type="text/css"  rel="stylesheet" href="css/index.css">
-<?php
+<link href="assets/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+<script type="application/javascript" src="assets/jquery/jquery.min.js"></script>
+<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script><?php
 
 include_once('controllers/ClientesController.php');
 
@@ -30,9 +32,10 @@ $toOrder = ($order == 'ASC') ? 'DESC' : 'ASC';
                 <table class="table table-bordered table-striped table-condensed flip-content">
                     <thead class="flip-content">
                     <tr>
+                        <th align="left"> Tipo Cliente </th>
                         <th align="left"> Nome </th>
+                        <th align="left"> Documento </th>
                         <th align="left"> Idade </th>
-                        <th align="left"> CPF </th>
                         <th align="left"> CEP </th>
                         <th align="left"> Endereço </th>
                         <th align="left"> Número </th>
@@ -40,15 +43,20 @@ $toOrder = ($order == 'ASC') ? 'DESC' : 'ASC';
                         <th align="left"> Bairro </th>
                         <th align="left"> Cidade </th>
                         <th align="left"> Estado </th>
+                        <th align="left"> Estrelas </th>
                     </tr>
                     </thead>
                     <tbody>
                         <?php
+                        $xid =0;
                         foreach ($clientes->getClientes($order) as $key => $itens) {
                             echo'<tr  onclick="javascript:window.open('."'".'cliente.php?nome='.$itens->nome."'".','."'_self'".');" class="rowclick">';
+                            $tipoCliente = ($itens->tipo == 1) ? 'Pessoa Jurídica' : 'Pessoa Física';
+                            echo '<td>'.$tipoCliente.'</td>';
                             echo '<td>'.$itens->nome.'</td>';
+                            $docLabel = ($itens->tipo == 1) ? 'CNPJ' : 'CPF';
+                            echo "<td> $docLabel: $itens->documento</td>";
                             echo '<td>'.$itens->idade.'</td>';
-                            echo '<td>'.$itens->cpf.'</td>';
                             echo '<td>'.$itens->cep.'</td>';
                             echo '<td>'.$itens->endereco.'</td>';
                             echo '<td>'.$itens->numero.'</td>';
@@ -56,7 +64,10 @@ $toOrder = ($order == 'ASC') ? 'DESC' : 'ASC';
                             echo '<td>'.$itens->bairro.'</td>';
                             echo '<td>'.$itens->cidade.'</td>';
                             echo '<td>'.$itens->estado.'</td>';
+                            echo '<td><input id="rating-system'.$xid.'" type="number" class="rating" min="1" max="5" step="'.$itens->importancia.'"></td>';
+                            echo "<script>$('#rating-system".$xid."').rating('update', ".$itens->importancia.");</script>";
                             echo'</tr>';
+                            $xid++;
                         }
                         ?>
                     </tbody>
@@ -72,4 +83,3 @@ $toOrder = ($order == 'ASC') ? 'DESC' : 'ASC';
         </div>
     </div>
 </div>
-<script type="application/javascript" src="assets/jquery/jquery.min.js"></script>

@@ -3,9 +3,13 @@
 <link type="text/css"  rel="stylesheet" href="css/index.css">
 <link href="assets/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
 <script type="application/javascript" src="assets/jquery/jquery.min.js"></script>
-<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script><?php
+<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script>
+<?php
+define('CLASS_DIR','src/');
+set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
+spl_autoload_register();
 
-include_once('controllers/ClientesController.php');
+use MC\Controllers\ClientesController;
 
 $clientes = new ClientesController();
 extract($_GET);

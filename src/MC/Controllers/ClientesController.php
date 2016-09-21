@@ -1,6 +1,9 @@
 <?php
-require_once('models/PessoaFisica.php');
-require_once('models/PessoaJuridica.php');
+
+namespace MC\Controllers;
+
+use MC\Cliente\Types\PessoaFisica;
+use MC\Cliente\Types\PessoaJuridica;
 
 class ClientesController
 {
@@ -12,7 +15,7 @@ class ClientesController
     public function __construct(){
 
         // resgatando dados do cliente JSON
-        $arquivo = file_get_contents('data/clientes.json');
+        $arquivo = file_get_contents(CLASS_DIR.'MC/Cliente/Storage/clientes.json');
         $arrayClientes = json_decode($arquivo);
         foreach ($arrayClientes->items->item as $cli) {
 

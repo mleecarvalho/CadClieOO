@@ -1,6 +1,8 @@
 <?php
 
-class Cliente
+namespace MC\Cliente;
+
+abstract class Cliente
 {
 
     private $nome;
@@ -187,7 +189,7 @@ class Cliente
 
 
     public function getDados(){
-        $dados = new stdClass();
+        $dados = new \stdClass();
         $dados->nome = $this->getNome();
         $dados->idade = $this->getIdade();
         $dados->cep = $this->getCep();

@@ -1,5 +1,8 @@
 <?php
-require_once('models/Cliente.php');
+
+namespace MC\Cliente\Types;
+
+use MC\Cliente\Cliente;
 
 class PessoaJuridica extends Cliente
 {

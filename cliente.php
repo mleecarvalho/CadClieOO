@@ -1,3 +1,11 @@
+<?php
+define('CLASS_DIR','src/');
+set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
+spl_autoload_register();
+
+use MC\Controllers\ClientesController;
+
+?>
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link type="text/css"  rel="stylesheet" href="assets/bootstrap-table/bootstrap-table.min.css">
 <link type="text/css"  rel="stylesheet" href="css/index.css">
@@ -23,8 +31,6 @@
         header('location:index.php');
         die();
     }
-
-    include_once('controllers/ClientesController.php');
 
     $clientes = new ClientesController();
     $dados = $clientes->findCliente($nome);

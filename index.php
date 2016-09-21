@@ -1,9 +1,3 @@
-<link type="text/css"  rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<link type="text/css"  rel="stylesheet" href="assets/bootstrap-table/bootstrap-table.min.css">
-<link type="text/css"  rel="stylesheet" href="css/index.css">
-<link href="assets/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
-<script type="application/javascript" src="assets/jquery/jquery.min.js"></script>
-<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script>
 <?php
 define('CLASS_DIR','src/');
 set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
@@ -11,6 +5,15 @@ spl_autoload_register();
 
 use MC\Controllers\ClientesController;
 
+?>
+<link type="text/css"  rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link type="text/css"  rel="stylesheet" href="assets/bootstrap-table/bootstrap-table.min.css">
+<link type="text/css"  rel="stylesheet" href="css/index.css">
+<link href="assets/star-rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+<script type="application/javascript" src="assets/jquery/jquery.min.js"></script>
+<script src="assets/star-rating/js/star-rating.js" type="text/javascript"></script>
+
+<?php
 $clientes = new ClientesController();
 extract($_GET);
 if(!isset($order)) $order = 'ASC';
